@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referensi Konten Startup Software House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Visualization & Content Choices:
+    - Report Intro/Conclusion -> Sections: 'Pendahuluan' & 'Kesimpulan': Static text, introductory/concluding paragraphs. Goal: Context.
+    - Instagram/Twitter Strategies -> Sections: 'Strategi Instagram' & 'Strategi Twitter (X)': Structured text, bullet points, key takeaways highlighted. Goal: Inform, Guide.
+    - Content Themes (Table 3 from report) -> Section: 'Ide Konten Instagram': Displayed as a well-styled, clear HTML table. Goal: Organize, Inform.
+    - Benchmark Accounts (Tables 1 & 2 from report) -> Sections: 'Inspirasi Instagram' & 'Inspirasi Twitter (X)': Interactive HTML tables. Features: filtering by 'Kategori', simple text search within table, clickable handles (opening in new tab). Goal: Provide References, Enable Exploration, Facilitate Discovery. Interaction: JavaScript for filtering/search.
+    - Justification: The primary value of the report lies in its textual guidance and the lists of inspirational accounts. Making these lists easily searchable and filterable significantly enhances usability. Clear presentation of strategic advice and content themes is prioritized.
+    - NO SVG graphics used. NO Mermaid JS used. No Chart.js will be used as the data is primarily textual and categorical, best served by interactive tables rather than quantitative charts. -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .nav-link { transition: all 0.3s ease; }
+        .nav-link.active {
+            border-bottom-color: #0284c7; /* sky-600 */
+            color: #0284c7; /* sky-600 */
+            font-weight: 600;
+        }
+        .table-cell-truncate {
+            max-width: 250px;
+            white-space: normal;
+            word-break: break-word;
+        }
+        /* Custom scrollbar for tables if needed */
+        .table-container::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .table-container::-webkit-scrollbar-track {
+            background: #f1f5f9; /* slate-100 */
+        }
+        .table-container::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* slate-400 */
+            border-radius: 4px;
+        }
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* slate-500 */
+        }
+        /* Ensure table headers are sticky for better UX on scroll */
+        .sticky-header th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: #f8fafc; /* slate-50, slightly lighter than card for distinction */
+        }
+         /* Filter dropdown styling */
+        .filter-select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236b7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.4-5.4-13z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 0.7em top 50%, 0 0;
+            background-size: 0.65em auto, 100%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <header class="bg-sky-700 text-white p-6 shadow-md">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-3xl font-bold text-center">Referensi Konten Efektif untuk Startup Software House</h1>
+            <p class="text-center text-sky-100 mt-1">Panduan Interaktif untuk Strategi Konten AI, Software, dan Bisnis</p>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-sm sticky top-0 z-20">
+        <div class="container mx-auto max-w-6xl">
+            <ul class="flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-4 p-3 overflow-x-auto">
+                <li><a href="#inspirasi-instagram" class="nav-link py-2 px-3 border-b-2 border-transparent hover:border-sky-500 hover:text-sky-600 whitespace-nowrap">Inspirasi Instagram</a></li>
+                <li><a href="#inspirasi-twitter" class="nav-link py-2 px-3 border-b-2 border-transparent hover:border-sky-500 hover:text-sky-600 whitespace-nowrap">Inspirasi Twitter (X)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto max-w-6xl p-4 sm:p-6">
+        <section id="pendahuluan" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Pendahuluan</h2>
+            <p class="mb-3 leading-relaxed">Selamat datang di panduan interaktif referensi konten untuk startup Software House*. Dalam lanskap digital Indonesia yang dinamis, media sosial seperti Instagram dan Twitter (X) adalah kunci untuk membangun merek, menjangkau audiens, dan mendorong pertumbuhan. Laporan ini dirancang untuk memberikan Anda strategi konten yang efisien dan relevan, dengan fokus pada tema Kecerdasan Buatan (AI), Pengembangan *Software* (Web dan Android), dan Bisnis.</p>
+            <p class="leading-relaxed">Aplikasi ini akan membantu Anda menjelajahi berbagai aspek strategi pemasaran, variabel konten yang efektif, jenis konten berdasarkan tema, serta studi kasus dan akun *benchmark* di Indonesia. Gunakan navigasi di atas untuk berpindah antar bagian dan temukan inspirasi untuk konten startup Anda.</p>
+        </section>
+
+        <section id="strategi-instagram" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Strategi Umum Pemasaran Instagram</h2>
+            <p class="mb-4 leading-relaxed">Instagram adalah platform visual yang kuat. Untuk memaksimalkan dampaknya, startup *software house* perlu pendekatan strategis. Bagian ini membahas optimalisasi profil, pentingnya kualitas visual, pemanfaatan fitur interaktif, konsistensi, interaksi audiens, serta penggunaan *hashtag* dan kata kunci yang efektif.</p>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">1. Optimalisasi Profil dan Akun Bisnis</h3>
+                    <p class="leading-relaxed">Beralih ke akun bisnis Instagram untuk akses analitik dan fitur iklan. Optimalkan profil dengan logo jelas, bio menarik, tautan ke situs web, dan kata kunci industri untuk visibilitas pencarian.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">2. Pentingnya Konten Visual Berkualitas Tinggi</h3>
+                    <p class="leading-relaxed">Fokus pada foto dan video berkualitas tinggi dengan elemen kreatif. Konsistensi visual (warna, tema) membangun profesionalisme dan daya tarik.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">3. Pemanfaatan Fitur Interaktif Instagram</h3>
+                    <p class="leading-relaxed">Gunakan *Stories*, *Reels*, *polling*, kuis, *question box*, dan *carousel posts* untuk meningkatkan keterlibatan dan menyampaikan informasi kompleks secara menarik.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">4. Konsistensi dan Interaksi Audiens</h3>
+                    <p class="leading-relaxed">Jadwalkan posting secara konsisten. Aktif berinteraksi dengan audiens (respons komentar, pertanyaan) dan dorong *User-Generated Content* (UGC) untuk membangun komunitas loyal.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">5. Penggunaan Hashtag dan Kata Kunci</h3>
+                    <p class="leading-relaxed">Gunakan kombinasi *hashtag* spesifik industri, kampanye, dan tren. Optimalkan bio dan *caption* dengan kata kunci relevan untuk SEO internal Instagram dan jangkauan organik.</p>
+                </div>
+
+                <h3 class="text-xl font-semibold text-sky-700 mt-6 mb-2">Variabel Konten Instagram yang Efisien</h3>
+                <p class="mb-4 leading-relaxed">Efisiensi konten tidak hanya soal apa yang diposting, tapi bagaimana disajikan dan resonansinya dengan audiens. Perhatikan tipe konten (video, *carousel*), kualitas visual, kejelasan nilai, konsistensi, interaksi, dan gaya bahasa.</p>
+                 <ul class="list-disc list-inside space-y-2 leading-relaxed">
+                    <li><strong>Tipe Konten:</strong> Video (*Reels*, *Stories*) dan *carousel posts* sangat efektif untuk *engagement* dan penyampaian informasi.</li>
+                    <li><strong>Kualitas Visual & Estetika:</strong> Visual jernih, resolusi optimal, dan konsistensi desain membangun identitas merek.</li>
+                    <li><strong>Kejelasan & Nilai Konten:</strong> Fokus pada pemberian nilai informatif, edukatif, atau menghibur. Sederhanakan topik teknis.</li>
+                    <li><strong>Konsistensi & Jadwal Posting:</strong> Publikasi teratur sesuai jadwal optimal audiens.</li>
+                    <li><strong>Interaksi & UGC:</strong> Aktif berinteraksi dan dorong UGC untuk kredibilitas.</li>
+                    <li><strong>Gaya Bahasa:</strong> Gunakan bahasa yang mudah dimengerti, profesional, namun bisa juga informal untuk kedekatan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ide-konten-instagram" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Ide Konten Instagram Berdasarkan Tema</h2>
+            <p class="mb-4 leading-relaxed">Startup *software house* dapat menyusun konten berdasarkan tema AI, *Software* (Web & Android), dan Bisnis. Interseksi tema ini adalah kunci untuk konten yang beresonansi. Fokus pada bagaimana AI dan *software* (produk startup) secara langsung menyelesaikan masalah bisnis (kebutuhan audiens).</p>
+
+            <div class="space-y-6 mb-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">Konten Tema AI</h3>
+                    <p class="leading-relaxed">Fokus pada edukasi dan demonstrasi nilai. Contoh: tutorial konsep AI, *use case* AI, mitos vs. fakta, demo produk AI (*chatbot*, analisis data), tren AI, studi kasus transformasi digital UMKM dengan AI, visualisasi data pertumbuhan AI.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">Konten Tema Software (Web & Android)</h3>
+                    <p class="leading-relaxed">Fokus pada pameran portofolio dan edukasi teknis. Contoh: *showcase* proyek (UI/UX aplikasi), tutorial pengembangan (tips *coding*, *framework*), *behind-the-scenes* proses pengembangan, perbandingan teknologi/solusi.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">Konten Tema Bisnis</h3>
+                    <p class="leading-relaxed">Fokus menarik klien. Contoh: pentingnya transformasi digital, manfaat digitalisasi UMKM, studi kasus bisnis sukses/gagal karena teknologi, tips pertumbuhan startup, kisah inspiratif *brand*/pendiri, pengenalan tim, konten humor/meme relevan.</p>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-sky-700 mb-3">Ringkasan Variabel Konten Instagram Efisien Berdasarkan Tema</h3>
+            <div class="overflow-x-auto table-container rounded-lg border border-slate-200">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-100 sticky-header">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Tema</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Format Konten Direkomendasikan</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Tujuan Utama</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider table-cell-truncate">Contoh Konten (Relevan dengan Software House)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-200">
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">AI</td>
+                            <td class="px-4 py-3">Reels, Carousel, Infografis, Video Feed</td>
+                            <td class="px-4 py-3">Edukasi, Awareness, Lead Generation</td>
+                            <td class="px-4 py-3 table-cell-truncate">"5 Tren AI yang Akan Mengubah Bisnis Anda di 2025", "Tutorial Singkat: Memanfaatkan AI untuk Analisis Data Pelanggan", "Studi Kasus: Peningkatan Efisiensi X% dengan Integrasi AI Kami"</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">Software (Web & Android)</td>
+                            <td class="px-4 py-3">Reels, Carousel, Foto/Video Feed, Stories</td>
+                            <td class="px-4 py-3">Showcase Portofolio, Edukasi, Kredibilitas</td>
+                            <td class="px-4 py-3 table-cell-truncate">"Intip UI/UX Terbaru Aplikasi Mobile Kami", "Tips Coding Efisien untuk Developer Android", "Behind-the-Scenes: Proses Pengembangan Aplikasi Web Klien A", "Sebelum & Sesudah: Transformasi Website Bisnis X"</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">Bisnis</td>
+                            <td class="px-4 py-3">Carousel, Foto/Video Feed, Stories, Live</td>
+                            <td class="px-4 py-3">Inspirasi, Transformasi Digital, Keterhubungan, Lead Generation</td>
+                            <td class="px-4 py-3 table-cell-truncate">"Mengapa Bisnis Anda Wajib Go Digital Sekarang?", "Kisah Sukses UMKM X: Omzet Naik 3x Lipat dengan Solusi Kami", "Meet The Team: Kenalan dengan Developer Backend Kami", "Q&A Live: Tantangan Digitalisasi Bisnis"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <p class="mt-4 text-sm text-slate-600 leading-relaxed"><strong>Penting:</strong> Konten yang paling kuat adalah yang menunjukkan bagaimana AI dan *software* (produk startup) secara langsung menyelesaikan masalah bisnis (kebutuhan audiens). Fokus pada nilai nyata yang diberikan kepada pelanggan.</p>
+        </section>
+
+        <section id="inspirasi-instagram" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Akun Instagram Inspiratif di Indonesia</h2>
+            <p class="mb-4 leading-relaxed">Berikut adalah daftar akun Instagram berbahasa Indonesia yang relevan dari berbagai kategori. Gunakan filter dan pencarian untuk menemukan akun yang paling sesuai sebagai patokan untuk software house. Menganalisis akun-akun ini dapat memberikan pemahaman tentang strategi konten yang berhasil.</p>
+
+            <div class="mb-4 flex flex-col sm:flex-row gap-4">
+                <input type="text" id="searchInstagram" class="p-2 border border-slate-300 rounded-md w-full sm:w-1/2 focus:ring-sky-500 focus:border-sky-500" placeholder="Cari akun atau pembelajaran...">
+                <select id="filterInstagramCategory" class="p-2 border border-slate-300 rounded-md w-full sm:w-1/2 filter-select focus:ring-sky-500 focus:border-sky-500">
+                    <option value="">Semua Kategori</option>
+                </select>
+            </div>
+
+            <div class="overflow-x-auto table-container rounded-lg border border-slate-200 max-h-[600px]">
+                <table class="min-w-full divide-y divide-slate-200" id="tableInstagram">
+                    <thead class="bg-slate-100 sticky-header">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Kategori</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Nama Akun</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Handle Instagram</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider table-cell-truncate">Pembelajaran Utama</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-200">
+                        </tbody>
+                </table>
+            </div>
+            <p class="mt-2 text-xs text-slate-500">Geser tabel secara horizontal jika perlu untuk melihat semua kolom.</p>
+        </section>
+
+        <section id="strategi-twitter" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Strategi Konten Twitter (X) yang Efektif</h2>
+            <p class="mb-4 leading-relaxed">Twitter (X) menawarkan dinamika berbeda, lebih fokus pada percakapan berbasis teks dan informasi cepat. Bagian ini menjelaskan format konten, pemanfaatan *hashtag* dan tren, interaksi audiens, serta fitur-fitur X yang dapat dimanfaatkan *software house*.</p>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">1. Format Konten Twitter (X)</h3>
+                    <p class="leading-relaxed">Ideal untuk informasi singkat, pertanyaan diskusi, kutipan, *thread* edukatif. Gunakan visual (infografis, gambar, GIF) untuk meningkatkan *engagement*. Video singkat atau cuplikan demo juga efektif. Manfaatkan X Spaces untuk diskusi audio interaktif.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">2. Pemanfaatan Hashtag dan Tren</h3>
+                    <p class="leading-relaxed">Ikuti tren dan gunakan *hashtag* viral untuk memperluas jangkauan. Alat seperti X Pro dapat membantu memantau *trending topics*. Kemampuan merespons tren dengan cepat menunjukkan *agility*.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">3. Interaksi dan Keterlibatan Audiens</h3>
+                    <p class="leading-relaxed">Aktif merespons, menjawab pertanyaan, dan terlibat dalam percakapan. Adakan *polling* dan diskusi. Cerita otentik dan pembelajaran dari pengalaman dihargai. Bangun persona yang personal dan responsif.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-600 mb-2">4. Memanfaatkan Fitur Twitter (X)</h3>
+                    <p class="leading-relaxed">Investasi di X Premium dapat memberi keuntungan (visibilitas, fitur baru, prioritas balasan, postingan lebih panjang). X Spaces adalah peluang kolaborasi dengan *thought leaders* untuk memperluas jangkauan dan membangun otoritas.</p>
+                </div>
+                <p class="mt-4 text-sm text-slate-600 leading-relaxed"><strong>Kunci Sukses di Twitter (X):</strong> Jadilah saluran diskusi teknis dan pembangun otoritas. Berpartisipasi aktif dalam komunitas teknologi, tunjukkan keahlian, dan bangun reputasi sebagai *thought leader* untuk menarik audiens B2B.</p>
+            </div>
+        </section>
+
+        <section id="inspirasi-twitter" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Akun Twitter (X) Inspiratif di Indonesia</h2>
+            <p class="mb-4 leading-relaxed">Berikut adalah daftar akun Twitter (X) berbahasa Indonesia yang relevan. Gunakan filter dan pencarian untuk menemukan akun yang dapat menjadi inspirasi bagi strategi konten Twitter (X) software house. Perhatikan jenis konten, gaya, dan interaksi mereka.</p>
+
+             <div class="mb-4 flex flex-col sm:flex-row gap-4">
+                <input type="text" id="searchTwitter" class="p-2 border border-slate-300 rounded-md w-full sm:w-1/2 focus:ring-sky-500 focus:border-sky-500" placeholder="Cari akun atau pembelajaran...">
+                <select id="filterTwitterCategory" class="p-2 border border-slate-300 rounded-md w-full sm:w-1/2 filter-select focus:ring-sky-500 focus:border-sky-500">
+                    <option value="">Semua Kategori</option>
+                </select>
+            </div>
+
+            <div class="overflow-x-auto table-container rounded-lg border border-slate-200 max-h-[600px]">
+                <table class="min-w-full divide-y divide-slate-200" id="tableTwitter">
+                    <thead class="bg-slate-100 sticky-header">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Kategori</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Nama Akun</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Handle Twitter</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider table-cell-truncate">Pembelajaran Utama</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-200">
+                        </tbody>
+                </table>
+            </div>
+            <p class="mt-2 text-xs text-slate-500">Geser tabel secara horizontal jika perlu untuk melihat semua kolom.</p>
+        </section>
+
+        <section id="kesimpulan" class="tab-content bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-sky-700 mb-4">Kesimpulan dan Rekomendasi</h2>
+            <p class="mb-3 leading-relaxed">Untuk startup *software house* (web dan Android) di Indonesia, strategi konten Instagram dan Twitter yang efektif harus berakar pada pemahaman mendalam tentang audiens, adaptasi terhadap dinamika platform, dan fokus pada penyampaian nilai solusi.</p>
+            <p class="mb-3 leading-relaxed">Di <strong>Instagram</strong>, tekankan visual berkualitas tinggi, format dinamis (*Reels*, *Carousel*), dan fitur interaktif. Konten harus edukatif, mendemonstrasikan kapabilitas produk AI dan *software*, serta menceritakan kisah transformasi bisnis. Optimalkan *hashtag* dan kata kunci untuk SEO organik.</p>
+            <p class="mb-3 leading-relaxed">Di <strong>Twitter (X)</strong>, bangun otoritas sebagai *thought leader* dan terlibat dalam diskusi teknis *real-time*. Cepat beradaptasi dengan tren dan tunjukkan sisi humanis. Pertimbangkan fitur berbayar seperti X Premium dan X Spaces untuk akselerasi visibilitas.</p>
+            <p class="font-semibold text-slate-800 leading-relaxed">Secara keseluruhan, keberhasilan di media sosial bergantung pada kemampuan untuk secara konsisten memberikan konten yang bernilai, relevan, dan menarik, yang jelas menunjukkan bagaimana solusi *software* dan AI Anda mengatasi tantangan bisnis audiens. Pelajari akun *benchmark* untuk praktik terbaik dan adaptasikan untuk strategi konten yang kuat dan berkelanjutan.</p>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-slate-500 text-sm">
+        <p>&copy; <span id="currentYear"></span> Panduan Konten Startup Software House. Dibuat untuk tujuan referensi.</p>
+    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        function activateTab(targetId) {
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === targetId) {
+                    content.classList.add('active');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Activate tab based on URL hash or default to first
+        const currentHash = window.location.hash.substring(1);
+        if (currentHash) {
+            activateTab(currentHash);
+        } else {
+            activateTab('pendahuluan'); // Default tab
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                window.location.hash = targetId; // Update URL hash
+                activateTab(targetId);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+        
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Data Akun Instagram (Contoh, idealnya ini dari sumber data dinamis atau JSON)
+        const instagramAccounts = [
+            { category: "Edukasi Teknologi/AI", name: "Warung Sains Teknologi", handle: "@warstek_com", learning: "Membahas isu terkini sains & teknologi dalam gambar & video informatif." },
+            { category: "Edukasi Teknologi/AI", name: "Sains Pop ID", handle: "@sainspopid", learning: "Infografis menarik, pengetahuan sains & teknologi terkini." },
+            { category: "Edukasi Teknologi/AI", name: "Sainsologi", handle: "@sainsologi", learning: "Pengetahuan dari berbagai bidang dengan pendekatan keilmiahan." },
+            { category: "Edukasi Teknologi/AI", name: "Zenius Education", handle: "@zeniuseducation", learning: "Portal belajar online, konten membuka pikiran dan menambah wawasan." },
+            { category: "Edukasi Teknologi/AI", name: "Hujan Tanda Tanya", handle: "@hujantandatanya", learning: "Materi kekinian, penjelasan fun di video YouTube." },
+            { category: "Edukasi Teknologi/AI", name: "William Tanuwijaya", handle: "@liamtanu", learning: "Konten bisnis, keuangan, teknologi, travel (Founder Tokopedia)." },
+            { category: "Edukasi Teknologi/AI", name: "Vill Vincent", handle: "@vv.geek", learning: "Konten gaming, teknologi, arsitektur, alam." },
+            { category: "Edukasi Teknologi/AI", name: "IDCamp", handle: "@idcamp.ioh", learning: "Program beasiswa developer, alur belajar Android & Web." },
+            { category: "Edukasi Teknologi/AI", name: "Dicoding Indonesia", handle: "@dicoding", learning: "Platform edukasi teknologi, program pelatihan AI & web development." },
+            { category: "Edukasi Teknologi/AI", name: "Petani Kode", handle: "@petanikode", learning: "Informasi event teknologi, software gratis, meme programming." },
+            { category: "Edukasi Teknologi/AI", name: "Code Humor", handle: "@codehumor", learning: "Meme soal fakta kebiasaan programmer." },
+            { category: "Software House", name: "GITS Indonesia", handle: "@gitsindonesia", learning: "IT Consulting, pengembangan aplikasi mobile & website, cloud." },
+            { category: "Software House", name: "Suitmedia", handle: "@suitmedia", learning: "Pengembangan aplikasi, branding, digital marketing." },
+            { category: "Software House", name: "Sagara Technology", handle: "@sagaratechnology", learning: "Proyek digital (Web, Mobile, AR), AI, NFT." },
+            { category: "Software House", name: "GeekGarden", handle: "@geekgarden.id", learning: "Pengembangan aplikasi berbasis cloud, desain UX/UI, transformasi digital." },
+            { category: "Software House", name: "ImajiKu Cipta Media", handle: "@imajikuciptamedia", learning: "Desainer & pengembang web, aplikasi mobile, e-commerce." },
+            { category: "Agensi Digital", name: "We Are Social Indonesia", handle: "@wearesocialid", learning: "Laporan tren media sosial, internet, mobile & e-commerce global." },
+            { category: "Agensi Digital", name: "Digital Agency ID", handle: "@digitalagencyid", learning: "Pemasaran media sosial, pengembangan website, Google Ads." },
+            { category: "Agensi Digital", name: "Taksu Digital", handle: "@taksudigital", learning: "Layanan iklan Instagram untuk startup & UKM." },
+            { category: "Agensi Digital", name: "Juicebox", handle: "@juicebox.co.id", learning: "Agensi digital lengkap, desain web, desain UX." },
+            { category: "Startup Bisnis (Umum)", name: "UKM Indonesia", handle: "@ukmindonesia.id", learning: "Fokus pada UMKM, transformasi digital, konten promosi." },
+            { category: "Startup Bisnis (Umum)", name: "Ruang Menyala", handle: "@ruangmenyala", learning: "Konsultan bisnis digital." },
+            { category: "Startup Bisnis (Umum)", name: "Sribu", handle: "@sribu", learning: "Ide konten Instagram, promosi bisnis, giveaway, testimoni." },
+            { category: "Startup Bisnis (Umum)", name: "Glints", handle: "@glintsid", learning: "Tips karir, pengembangan diri, lowongan startup." },
+            { category: "Startup Bisnis (Umum)", name: "Manychat", handle: "@manychat", learning: "Automasi Pemasaran Instagram, balasan DM & komentar." },
+            { category: "Startup Bisnis (Umum)", name: "Predis.ai", handle: "@predis.ai", learning: "Pembuat Reels AI, generasi konten AI." },
+        ];
+
+        const twitterAccounts = [
+            { category: "Edukasi Teknologi/AI", name: "Ivan Lanin", handle: "@ivanlanin", learning: "Penggunaan bahasa Indonesia yang baik dan benar, tidak kaku." },
+            { category: "Edukasi Teknologi/AI", name: "Semestasains", handle: "@semestasains", learning: "Topik sains, pengetahuan, seni dari sudut pandang ilmiah." },
+            { category: "Edukasi Teknologi/AI", name: "GNFI", handle: "@GNFI", learning: "Berita baik tentang Indonesia, fakta menarik." },
+            { category: "Edukasi Teknologi/AI", name: "Dicoding Indonesia", handle: "@dicoding", learning: "Program pelatihan AI & web development, kurikulum standar industri." },
+            { category: "Software House", name: "GITS Indonesia", handle: "@gitsindonesia", learning: "IT Consulting, pengembangan aplikasi mobile & website, cloud." },
+            { category: "Software House", name: "Kulkul Technology", handle: "@kulkul.tech", learning: "Software engineering, konsultasi, pelatihan, code review." },
+            { category: "Agensi Digital", name: "IDEOWORKS Digital Marketing Agency", handle: "@ideoworks.id", learning: "Agensi komunikasi pemasaran terintegrasi, media sosial, analitik." },
+            { category: "Agensi Digital", name: "Krona Digital Jaya Inti", handle: "@krona.co.id", learning: "Agensi pemasaran digital, kreativitas, analisis data, automasi." },
+            { category: "Agensi Digital", name: "Blackstone Digital Agency", handle: "@blackstonedigitalagency", learning: "Manajemen kampanye, pembuatan konten, pengelolaan media sosial." },
+            { category: "Agensi Digital", name: "Taksu Digital", handle: "@taksudigital", learning: "Layanan iklan Instagram untuk startup & UKM." },
+            { category: "Agensi Digital", name: "Logique Digital Indonesia", handle: "@logique_id", learning: "Pengembangan web, SEO, SEM, operasi media sosial." },
+            { category: "Startup Bisnis (Umum)", name: "Glints", handle: "@glintsid", learning: "Tips karir, pengembangan diri, lowongan startup." },
+            { category: "Startup Bisnis (Umum)", name: "Mediasatartup", handle: "@mediastartup.id", learning: "Media startup, inovasi & entrepreneurship." },
+            { category: "Startup Bisnis (Umum)", name: "Singa Fintech", handle: "@singa_fintech", learning: "Layanan keuangan digital, transformasi digital UMKM." },
+            { category: "Startup Bisnis (Umum)", name: "Kominfo", handle: "@kemkomdigi", learning: "Transformasi digital, program e-smart." },
+        ];
+
+        function populateTable(tableId, data, filterElementId, searchElementId) {
+            const tableBody = document.getElementById(tableId).getElementsByTagName('tbody')[0];
+            const filterSelect = document.getElementById(filterElementId);
+            const searchInput = document.getElementById(searchElementId);
+            
+            let categories = [...new Set(data.map(item => item.category))];
+            categories.sort();
+            categories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                filterSelect.appendChild(option);
+            });
+
+            function renderTable(filteredData) {
+                tableBody.innerHTML = ''; // Clear existing rows
+                if (filteredData.length === 0) {
+                    const row = tableBody.insertRow();
+                    const cell = row.insertCell();
+                    cell.colSpan = 4;
+                    cell.textContent = 'Tidak ada data yang cocok.';
+                    cell.className = 'px-4 py-10 text-center text-slate-500';
+                } else {
+                    filteredData.forEach(item => {
+                        const row = tableBody.insertRow();
+                        row.insertCell().textContent = item.category;
+                        row.insertCell().textContent = item.name;
+                        
+                        const handleCell = row.insertCell();
+                        if (item.handle !== "(Tidak tersedia)" && item.handle.startsWith("@")) {
+                            const platform = tableId.includes('Instagram') ? 'instagram.com' : 'twitter.com';
+                            const handleLink = document.createElement('a');
+                            handleLink.href = `https://${platform}/${item.handle.substring(1)}`;
+                            handleLink.textContent = item.handle;
+                            handleLink.target = "_blank";
+                            handleLink.rel = "noopener noreferrer";
+                            handleLink.className = "text-sky-600 hover:text-sky-800 hover:underline";
+                            handleCell.appendChild(handleLink);
+                        } else {
+                            handleCell.textContent = item.handle;
+                        }
+                        
+                        const learningCell = row.insertCell();
+                        learningCell.textContent = item.learning;
+                        learningCell.className = 'table-cell-truncate';
+
+                        // Add Tailwind classes to cells
+                        Array.from(row.cells).forEach(cell => {
+                             cell.classList.add('px-4', 'py-3', 'text-sm');
+                        });
+                        row.cells[0].classList.add('font-medium', 'text-slate-800', 'whitespace-nowrap');
+
+                    });
+                }
+            }
+
+            function filterAndSearch() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = filterSelect.value;
+
+                const filteredData = data.filter(item => {
+                    const matchesCategory = selectedCategory === "" || item.category === selectedCategory;
+                    const matchesSearch = Object.values(item).some(val => 
+                        String(val).toLowerCase().includes(searchTerm)
+                    );
+                    return matchesCategory && matchesSearch;
+                });
+                renderTable(filteredData);
+            }
+
+            filterSelect.addEventListener('change', filterAndSearch);
+            searchInput.addEventListener('input', filterAndSearch);
+
+            renderTable(data); // Initial render
+        }
+
+        populateTable('tableInstagram', instagramAccounts, 'filterInstagramCategory', 'searchInstagram');
+        populateTable('tableTwitter', twitterAccounts, 'filterTwitterCategory', 'searchTwitter');
+    });
+</script>
+</body>
+</html>
