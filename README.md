@@ -13,3 +13,7 @@ Halaman web ini merupakan panduan visual dan eksploratif untuk membantu tim kont
 - ✅ Disusun untuk audiens Indonesia, dengan pendekatan edukatif, praktikal, dan mudah dipahami
 
 ---
+
+## 🌐 Live Preview via GitHub Pages
+
+Akses website langsung: https://keyframeeditor.github.io/startup-content-references/
