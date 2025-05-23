@@ -1,63 +1,140 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referensi Konten Startup Software House</title>
+    <title>Software House Content Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Visualization & Content Choices:
-    - Report Intro/Conclusion -> Sections: 'Pendahuluan' & 'Kesimpulan': Static text, introductory/concluding paragraphs. Goal: Context.
-    - Instagram/Twitter Strategies -> Sections: 'Strategi Instagram' & 'Strategi Twitter (X)': Structured text, bullet points, key takeaways highlighted. Goal: Inform, Guide.
-    - Content Themes (Table 3 from report) -> Section: 'Ide Konten Instagram': Displayed as a well-styled, clear HTML table. Goal: Organize, Inform.
-    - Benchmark Accounts (Tables 1 & 2 from report) -> Sections: 'Inspirasi Instagram' & 'Inspirasi Twitter (X)': Interactive HTML tables. Features: filtering by 'Kategori', simple text search within table, clickable handles (opening in new tab). Goal: Provide References, Enable Exploration, Facilitate Discovery. Interaction: JavaScript for filtering/search.
-    - Justification: The primary value of the report lies in its textual guidance and the lists of inspirational accounts. Making these lists easily searchable and filterable significantly enhances usability. Clear presentation of strategic advice and content themes is prioritized.
-    - NO SVG graphics used. NO Mermaid JS used. No Chart.js will be used as the data is primarily textual and categorical, best served by interactive tables rather than quantitative charts. -->
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .nav-link { transition: all 0.3s ease; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+        
+        .tab-content { 
+            display: none; 
+        }
+        
+        .tab-content.active { 
+            display: block; 
+        }
+        
+        .nav-link { 
+            transition: all 0.3s ease; 
+        }
+        
         .nav-link.active {
-            border-bottom-color: #0284c7; /* sky-600 */
-            color: #0284c7; /* sky-600 */
+            border-bottom-color: #0284c7;
+            color: #0284c7;
             font-weight: 600;
         }
+        
         .table-cell-truncate {
             max-width: 250px;
             white-space: normal;
             word-break: break-word;
         }
-        /* Custom scrollbar for tables if needed */
+        
+        /* Table styles */
         .table-container::-webkit-scrollbar {
             width: 8px;
             height: 8px;
         }
+        
         .table-container::-webkit-scrollbar-track {
-            background: #f1f5f9; /* slate-100 */
+            background: #f1f5f9;
         }
+        
         .table-container::-webkit-scrollbar-thumb {
-            background: #94a3b8; /* slate-400 */
+            background: #94a3b8;
             border-radius: 4px;
         }
+        
         .table-container::-webkit-scrollbar-thumb:hover {
-            background: #64748b; /* slate-500 */
+            background: #64748b;
         }
-        /* Ensure table headers are sticky for better UX on scroll */
+        
         .sticky-header th {
             position: sticky;
             top: 0;
             z-index: 10;
-            background-color: #f8fafc; /* slate-50, slightly lighter than card for distinction */
+            background-color: #f8fafc;
         }
-         /* Filter dropdown styling */
+        
+        /* Filter select styling */
         .filter-select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236b7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.4-5.4-13z%22%2F%3E%3C%2Fsvg%3E');
             background-repeat: no-repeat;
-            background-position: right 0.7em top 50%, 0 0;
-            background-size: 0.65em auto, 100%;
+            background-position: right 0.7em top 50%;
+            background-size: 0.65em auto;
+        }
+
+        /* Responsive table styles */
+        @media (max-width: 768px) {
+            table {
+                display: block;
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tbody, tr {
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                margin-bottom: 1rem;
+                border: 1px solid #e2e8f0;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                background: #ffffff;
+            }
+
+            td {
+                display: block;
+                text-align: left;
+                padding: 0.75rem !important;
+                border: none !important;
+            }
+
+            td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                color: #475569;
+                margin-bottom: 0.25rem;
+            }
+
+            .table-cell-truncate {
+                max-width: none;
+                white-space: normal;
+                word-break: normal;
+            }
+
+            .table-container {
+                max-height: none;
+                border: none;
+            }
+        }
+
+        /* Optimize scrollbar for mobile */
+        @media (max-width: 768px) {
+            .table-container::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            
+            .table-container::-webkit-scrollbar-thumb {
+                border-radius: 4px;
+                background-color: rgba(0, 0, 0, .3);
+            }
         }
     </style>
 </head>
@@ -145,34 +222,30 @@
             </div>
 
             <h3 class="text-xl font-semibold text-sky-700 mb-3">Ringkasan Variabel Konten Instagram Efisien Berdasarkan Tema</h3>
-            <div class="overflow-x-auto table-container rounded-lg border border-slate-200">
+            <div class="overflow-x-auto table-container rounded-lg border border-slate-200 shadow-md">
                 <table class="min-w-full divide-y divide-slate-200">
                     <thead class="bg-slate-100 sticky-header">
                         <tr>
                             <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Tema</th>
                             <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Format Konten Direkomendasikan</th>
                             <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Tujuan Utama</th>
-                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider table-cell-truncate">Contoh Konten (Relevan dengan Software House)</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider table-cell-truncate">Contoh Konten</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-slate-200">
                         <tr>
-                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">AI</td>
-                            <td class="px-4 py-3">Reels, Carousel, Infografis, Video Feed</td>
-                            <td class="px-4 py-3">Edukasi, Awareness, Lead Generation</td>
-                            <td class="px-4 py-3 table-cell-truncate">"5 Tren AI yang Akan Mengubah Bisnis Anda di 2025", "Tutorial Singkat: Memanfaatkan AI untuk Analisis Data Pelanggan", "Studi Kasus: Peningkatan Efisiensi X% dengan Integrasi AI Kami"</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">Software (Web & Android)</td>
-                            <td class="px-4 py-3">Reels, Carousel, Foto/Video Feed, Stories</td>
-                            <td class="px-4 py-3">Showcase Portofolio, Edukasi, Kredibilitas</td>
-                            <td class="px-4 py-3 table-cell-truncate">"Intip UI/UX Terbaru Aplikasi Mobile Kami", "Tips Coding Efisien untuk Developer Android", "Behind-the-Scenes: Proses Pengembangan Aplikasi Web Klien A", "Sebelum & Sesudah: Transformasi Website Bisnis X"</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">Bisnis</td>
-                            <td class="px-4 py-3">Carousel, Foto/Video Feed, Stories, Live</td>
-                            <td class="px-4 py-3">Inspirasi, Transformasi Digital, Keterhubungan, Lead Generation</td>
-                            <td class="px-4 py-3 table-cell-truncate">"Mengapa Bisnis Anda Wajib Go Digital Sekarang?", "Kisah Sukses UMKM X: Omzet Naik 3x Lipat dengan Solusi Kami", "Meet The Team: Kenalan dengan Developer Backend Kami", "Q&A Live: Tantangan Digitalisasi Bisnis"</td>
+                            <td data-label="Kategori" class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Nama Akun" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Handle" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Pembelajaran Utama" class="px-4 py-3 table-cell-truncate">
+                                <!-- content -->
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -202,7 +275,21 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-slate-200">
-                        </tbody>
+                        <tr>
+                            <td data-label="Kategori" class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Nama Akun" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Handle" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Pembelajaran Utama" class="px-4 py-3 table-cell-truncate">
+                                <!-- content -->
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <p class="mt-2 text-xs text-slate-500">Geser tabel secara horizontal jika perlu untuk melihat semua kolom.</p>
@@ -254,7 +341,21 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-slate-200">
-                        </tbody>
+                        <tr>
+                            <td data-label="Kategori" class="px-4 py-3 whitespace-nowrap font-medium text-slate-800">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Nama Akun" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Handle" class="px-4 py-3">
+                                <!-- content -->
+                            </td>
+                            <td data-label="Pembelajaran Utama" class="px-4 py-3 table-cell-truncate">
+                                <!-- content -->
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <p class="mt-2 text-xs text-slate-500">Geser tabel secara horizontal jika perlu untuk melihat semua kolom.</p>
